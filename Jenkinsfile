@@ -6,13 +6,5 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Example Deploy') {
-            when {
-                triggeredBy "TimerTrigger"
-            }
-            steps {
-                echo 'Deploying'
-            }
-        }
     }
 }
