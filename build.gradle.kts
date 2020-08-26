@@ -1,7 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  id ("org.sonarqube") version "3.0"
+  id "org.sonarqube" version "2.5"
+}
+
+plugins {
     `java-library`
     kotlin("jvm") version "1.4.0"
     id("me.champeau.gradle.jmh") version "0.5.0"
