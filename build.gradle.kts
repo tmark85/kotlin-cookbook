@@ -5,7 +5,6 @@ plugins {
     kotlin("jvm") version "1.4.0"
     id("me.champeau.gradle.jmh") version "0.5.0"
     id("com.palantir.graal") version "0.7.1-13-gd190241"
-    id("org.sonarqube") version "3.0"
 }
 
 group = "com.kousenit"
