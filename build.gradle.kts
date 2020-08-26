@@ -21,6 +21,19 @@ graal {
     outputName(scriptname)     // output is build/graal/${scriptname}
 }
 
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+tasks.jacocoTestReport {
+    reports {
+        xml.isEnabled = false
+        csv.isEnabled = false
+        html.destination = file("${buildDir}/jacocoHtml")
+    }
+}
+
 repositories {
     jcenter()
 }
