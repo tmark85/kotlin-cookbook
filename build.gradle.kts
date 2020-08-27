@@ -22,6 +22,11 @@ graal {
     outputName(scriptname)     // output is build/graal/${scriptname}
 }
 
+detekt {
+    toolVersion = "1.12.0"
+    config = files("detekt.yml")
+    buildUponDefaultConfig = true
+}
 
 jacoco {
     toolVersion = "0.8.5"
