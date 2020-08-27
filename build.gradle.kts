@@ -23,9 +23,9 @@ graal {
 }
 
 detekt {
-    toolVersion = "1.12.0"
-    config = files("detekt.yml")
-    buildUponDefaultConfig = true
+    toolVersion = "1.12.0"                                 
+    input = files("src/main/java", "src/test/java", "src/main/kotlin", "src/main/kotlin")     
+    config = files("detekt.yml")                  
 }
 
 jacoco {
