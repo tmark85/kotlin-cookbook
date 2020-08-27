@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id ("io.gitlab.arturbosch.detekt") version "1.0.0.RC6-3"
+    id ("io.gitlab.arturbosch.detekt") version "1.0.0.RC16"
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -24,7 +24,7 @@ graal {
 
 
 detekt {
-    version = "1.0.0.RC6-3"
+    version = "1.0.0.RC16"
     profile("main") {
         input = "$projectDir"
         config = "$projectDir/default-detekt-config.yml"
