@@ -24,7 +24,6 @@ graal {
 
 
 detekt {
-    version = "1.12.0"
     input = objects.fileCollection().from(
         "src/main/java",
         "src/test/java",
@@ -66,14 +65,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9")
     testImplementation(kotlin("test-junit5"))
-
     implementation(kotlin("script-runtime"))
-    implementation(detekt('io.gitlab.arturbosch.detekt:detekt-formatting:1.7.2'))
-    implementation(detekt('io.gitlab.arturbosch.detekt:detekt-cli:1.7.2'))
-}
-
-configurations {
-    detekt
 }
 
 java {
