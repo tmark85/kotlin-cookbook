@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id("io.gitlab.arturbosch.detekt") version ("1.12.0")
+    id ("io.gitlab.arturbosch.detekt") version "1.0.0.RC6-3"
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -24,14 +24,11 @@ graal {
 
 
 detekt {
-    failFast = true // fail build on any finding
-    buildUponDefaultConfig = true // preconfigure defaults
-    config = files("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
-
-    reports {
-        html.enabled = true // observe findings in your browser with structure and code snippets
-        xml.enabled = true // checkstyle like format mainly for integrations like Jenkins
-        txt.enabled = true // similar to the console output, contains issue signature to manually edit baseline files
+    version = "1.0.0.RC6-3"
+    profile("main") {
+        input = "<PATH Of the Kotlin Files to be scanned>"
+        config = "$projectDir/default-detekt-config.yml"
+        filters = ".*test.*,.*/resources/.*,.*/tmp/.*"
     }
 }
 
