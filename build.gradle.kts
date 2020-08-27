@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id("io.gitlab.arturbosch.detekt") version ("2.2.0")
+    id("io.gitlab.arturbosch.detekt") version ("1.12.0")
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -23,7 +23,7 @@ graal {
 }
 
 detekt {
-    version = "2.2.0"
+    version = "1.12.0"
     profile("main") {
         input = "<PATH Of the Kotlin Files to be scanned>"
         config = "$projectDir/default-detekt-config.yml"
