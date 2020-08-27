@@ -23,13 +23,21 @@ graal {
 }
 
 
+
 detekt {
-    version = "1.0.0.RC6-3"
-    profile("main") {
-        input = "<PATH Of the Kotlin Files to be scanned>"
-        config = "$projectDir/default-detekt-config.yml"
-        filters = ".*test.*,.*/resources/.*,.*/tmp/.*"
-    }
+        toolVersion = "1.0.0-RC14"
+        input = files("$projectDir")
+        config = files("$project.projectDir/default-detekt-config.yml")
+        reports {
+            xml {
+                enabled = true
+                destination = file("$project.projectDir/detekt-report.xml")
+            }
+            html {
+                enabled = true
+                destination = file("$project.projectDir/detekt-report.html")
+            }
+        }
 }
 
 jacoco {
