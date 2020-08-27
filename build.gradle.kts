@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id ("io.gitlab.arturbosch.detekt") version "2.2.0"
+    id("io.gitlab.arturbosch.detekt") version ("2.2.0")
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
