@@ -49,6 +49,10 @@ repositories {
     jcenter()
 }
 
+configurations {
+    detekt
+}
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
@@ -67,6 +71,7 @@ dependencies {
     testImplementation(kotlin("test-junit5"))
     implementation(kotlin("script-runtime"))
     detekt(kotlin("compiler-embeddable", "1.3.72"))
+    detekt('io.gitlab.arturbosch.detekt:detekt-cli:1.7.2')
 }
 
 java {
