@@ -66,6 +66,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9")
     testImplementation(kotlin("test-junit5"))
     implementation(kotlin("script-runtime"))
+    detekt(kotlin("compiler-embeddable", "1.3.72"))
 }
 
 java {
