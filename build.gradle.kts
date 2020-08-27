@@ -25,11 +25,9 @@ graal {
 
 detekt {
     version = "1.12.0"
-    profile("main") {
-        input = "$projectDir"
-        config = "$projectDir/default-detekt-config.yml"
-        filters = ".*/*Test.*,.*/resources/.*,.*/tmp/.*"
-    }
+    input = "$projectDir"
+    config = "$projectDir/default-detekt-config.yml"
+    filters = ".*/*Test.*,.*/resources/.*,.*/tmp/.*"
 }
 
 jacoco {
