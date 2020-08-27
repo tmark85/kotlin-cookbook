@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id ("io.gitlab.arturbosch.detekt") version "1.12.0"
+    id ("io.gitlab.arturbosch.detekt") version "1.0.0.RC6-3"
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -49,10 +49,6 @@ repositories {
     jcenter()
 }
 
-configurations {
-    detekt
-}
-
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
@@ -70,8 +66,6 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9")
     testImplementation(kotlin("test-junit5"))
     implementation(kotlin("script-runtime"))
-    detekt(kotlin("compiler-embeddable", "1.3.72"))
-    detekt("io.gitlab.arturbosch.detekt:detekt-cli:1.7.2")
 }
 
 java {
