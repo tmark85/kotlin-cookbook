@@ -68,8 +68,8 @@ dependencies {
     testImplementation(kotlin("test-junit5"))
 
     implementation(kotlin("script-runtime"))
-    detekt('io.gitlab.arturbosch.detekt:detekt-formatting:1.7.2')
-    detekt('io.gitlab.arturbosch.detekt:detekt-cli:1.7.2')
+    implementation(detekt('io.gitlab.arturbosch.detekt:detekt-formatting:1.7.2'))
+    implementation(detekt('io.gitlab.arturbosch.detekt:detekt-cli:1.7.2'))
 }
 
 configurations {
