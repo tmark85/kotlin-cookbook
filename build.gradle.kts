@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
+    id ("io.gitlab.arturbosch.detekt") version "2.2.0"
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -19,6 +20,15 @@ val scriptname: String by project  // read value from gradle.properties
 graal {
     mainClass("scripts.${scriptname.capitalize()}Kt")
     outputName(scriptname)     // output is build/graal/${scriptname}
+}
+
+detekt {
+    version = "2.2.0"
+    profile("main") {
+        input = "<PATH Of the Kotlin Files to be scanned>"
+        config = "$projectDir/default-detekt-config.yml"
+        filters = ".*test.*,.*/resources/.*,.*/tmp/.*"
+    }
 }
 
 jacoco {
