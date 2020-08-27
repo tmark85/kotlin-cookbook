@@ -24,12 +24,12 @@ graal {
 
 
 detekt {
-    input = objects.fileCollection().from(
-        "src/main/java",
-        "src/test/java",
-        "src/main/kotlin",
-        "src/test/kotlin"
-    )
+    version = "1.0.0.RC6-3"
+    profile("main") {
+        input = "$projectDir"
+        config = "$projectDir/default-detekt-config.yml"
+        filters = ".*/*Test.*,.*/resources/.*,.*/tmp/.*"
+    }
 }
 
 jacoco {
