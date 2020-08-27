@@ -26,7 +26,7 @@ graal {
 detekt {
     version = "1.0.0.RC6-3"
     profile("main") {
-        input = "<PATH Of the Kotlin Files to be scanned>"
+        input = "$projectDir"
         config = "$projectDir/default-detekt-config.yml"
         filters = ".*test.*,.*/resources/.*,.*/tmp/.*"
     }
