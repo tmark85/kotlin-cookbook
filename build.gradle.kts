@@ -12,7 +12,7 @@ plugins {
     id("com.palantir.graal") version "0.7.1-13-gd190241"
 }
 
-
+group = "com.capgemini"
 version = "1.0"
 
 val scriptname: String by project  // read value from gradle.properties
