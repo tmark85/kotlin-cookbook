@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id ("io.gitlab.arturbosch.detekt") version "1.12.0"
+    id("io.gitlab.arturbosch.detekt").version("1.12.0")
     id("org.sonarqube") version ("3.0")
     jacoco
     `java-library`
@@ -21,7 +21,6 @@ graal {
     mainClass("scripts.${scriptname.capitalize()}Kt")
     outputName(scriptname)     // output is build/graal/${scriptname}
 }
-
 
 detekt {
     toolVersion = "1.12.0"                                 
