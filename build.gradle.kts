@@ -12,7 +12,6 @@ plugins {
     id("com.palantir.graal") version "0.7.1-13-gd190241"
 }
 
-group = "com.capgemini"
 version = "1.0"
 
 val scriptname: String by project  // read value from gradle.properties
@@ -25,7 +24,30 @@ graal {
 detekt {
     toolVersion = "1.12.0"                                 
     input = files("src/main/java", "src/test/java", "src/main/kotlin", "src/main/kotlin")     
-    config = files("detekt.yml")                  
+    config = files("detekt.yml")
+    // install detekt cli
+    //curl -sSLO https://github.com/detekt/detekt/releases/download/v1.12.0/detekt && chmod a+x detekt && cd /usr/bin/
+    //detekt -cb -b baseline.xml -c detekt.yml
+    baseline = file("baseline.xml")
+    
+    reports {
+        xml {
+            enabled = true                                
+            destination = file("build/reports/detekt.xml") 
+        }
+        html {
+            enabled = true                                
+            destination = file("build/reports/detekt.html") 
+        }
+        txt {
+            enabled = true                                
+            destination = file("build/reports/detekt.txt") 
+        }
+        custom {
+            reportId = "CustomJsonReport"                 
+            destination = file("build/reports/detekt.json") 
+        }
+    }    
 }
 
 jacoco {
