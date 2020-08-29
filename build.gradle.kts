@@ -33,20 +33,20 @@ detekt {
     reports {
         xml {
             enabled = true                                
-            //destination = file("build/reports/detekt.xml") 
+            destination = file("build/reports/detekt.xml") 
         }
         html {
             enabled = true                                
-            //destination = file("build/reports/detekt.html") 
+            destination = file("build/reports/detekt.html") 
         }
         txt {
             enabled = true                                
-            //destination = file("build/reports/detekt.txt") 
+            destination = file("build/reports/detekt.txt") 
         }
-        /*custom {
+        custom {
             reportId = "CustomJsonReport"                 
             destination = file("build/reports/detekt.json") 
-        }*/
+        }
     }    
 }
 
