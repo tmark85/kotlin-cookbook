@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ConstructorParameterNaming:ISSPosition.kt$IssResponse$val iss_position: IssPosition</ID>
+    <ID>ConstructorParameterNaming:Task.kt$Task$_priority: Int = DEFAULT_PRIORITY</ID>
+    <ID>ForEachOnRange:CreateThread.kt$forEach { n -&gt; val sleepTime = Random.nextLong(range = 0..1000L) thread { Thread.sleep(sleepTime) println("${Thread.currentThread().name} for $n after ${sleepTime}ms") }.join() }</ID>
+    <ID>ForEachOnRange:ExhaustiveWhen.kt$forEach { printMod3(it) }</ID>
+    <ID>ForEachOnRange:ExhaustiveWhen.kt$forEach { printMod3Exhaustive(it) }</ID>
+    <ID>ForEachOnRange:ExhaustiveWhen.kt$forEach { printMod3SingleStatement(it) }</ID>
+    <ID>ForbiddenComment:Combinations.kt$// TODO: Need an implementation of permutations() too</ID>
+    <ID>FunctionNaming:IfEmptyOrBlank.kt$fun onSaleProducts_ifEmptyCollection(products: List&lt;Product&gt;)</ID>
+    <ID>FunctionNaming:IfEmptyOrBlank.kt$fun onSaleProducts_ifEmptyString(products: List&lt;Product&gt;)</ID>
+    <ID>FunctionNaming:backticks.kt$fun underscores_are_also_okay_only_on_tests()</ID>
+    <ID>FunctionOnlyReturningConstant:runtime_singleton.kt$MySingleton$fun myFunction()</ID>
+    <ID>IteratorNotThrowingNoSuchElementException:LocalDateProgression.kt$LocalDateProgressionIterator : Iterator</ID>
+    <ID>MagicNumber:AlgorithmBenchmarks.kt$AlgorithmBenchmarks$1000</ID>
+    <ID>MagicNumber:BinaryStringAndBack.kt$12</ID>
+    <ID>MagicNumber:Chunked.kt$10</ID>
+    <ID>MagicNumber:Chunked.kt$3</ID>
+    <ID>MagicNumber:CoerceIn.kt$3</ID>
+    <ID>MagicNumber:CoerceIn.kt$5</ID>
+    <ID>MagicNumber:CoerceIn.kt$6</ID>
+    <ID>MagicNumber:CoerceIn.kt$8</ID>
+    <ID>MagicNumber:CoerceIn.kt$9</ID>
+    <ID>MagicNumber:CreateThread.kt$1000L</ID>
+    <ID>MagicNumber:CreateThread.kt$5</ID>
+    <ID>MagicNumber:ExhaustiveWhen.kt$10</ID>
+    <ID>MagicNumber:ExhaustiveWhen.kt$3</ID>
+    <ID>MagicNumber:FileIO.kt$10</ID>
+    <ID>MagicNumber:FileIO.kt$20</ID>
+    <ID>MagicNumber:IfEmptyOrBlank.kt$0.25</ID>
+    <ID>MagicNumber:IfEmptyOrBlank.kt$10.0</ID>
+    <ID>MagicNumber:IfEmptyOrBlank.kt$29.95</ID>
+    <ID>MagicNumber:KotlinVersion.kt$16</ID>
+    <ID>MagicNumber:KotlinVersion.kt$3</ID>
+    <ID>MagicNumber:KotlinVersion.kt$50</ID>
+    <ID>MagicNumber:KotlinVersion.kt$8</ID>
+    <ID>MagicNumber:MeasureTime.kt$100L</ID>
+    <ID>MagicNumber:MeasureTime.kt$8</ID>
+    <ID>MagicNumber:ProcessClimateData.kt$10</ID>
+    <ID>MagicNumber:ProcessClimateData.kt$3</ID>
+    <ID>MagicNumber:ProcessClimateData.kt$5</ID>
+    <ID>MagicNumber:RandomLetter.kt$26</ID>
+    <ID>MagicNumber:RepeatDemo.kt$5</ID>
+    <ID>MagicNumber:Task1.kt$Task1$3</ID>
+    <ID>MagicNumber:Task1.kt$Task1$5</ID>
+    <ID>MagicNumber:UpCasting.kt$3</ID>
+    <ID>MagicNumber:UpCasting.kt$3L</ID>
+    <ID>MagicNumber:add_nums.kt$16</ID>
+    <ID>MagicNumber:add_nums.kt$3</ID>
+    <ID>MagicNumber:add_nums.kt$4</ID>
+    <ID>MagicNumber:add_nums.kt$5</ID>
+    <ID>MagicNumber:associate_with.kt$5</ID>
+    <ID>MagicNumber:cancelling.kt$100</ID>
+    <ID>MagicNumber:cancelling.kt$1000L</ID>
+    <ID>MagicNumber:cancelling.kt$100L</ID>
+    <ID>MagicNumber:cancelling.kt$50</ID>
+    <ID>MagicNumber:cancelling.kt$500L</ID>
+    <ID>MagicNumber:comparisons.kt$68</ID>
+    <ID>MagicNumber:comparisons.kt$70</ID>
+    <ID>MagicNumber:coroutinesHomePage.kt$10</ID>
+    <ID>MagicNumber:coroutinesHomePage.kt$1000L</ID>
+    <ID>MagicNumber:coroutinesSum.kt$1000L</ID>
+    <ID>MagicNumber:coroutinesSum.kt$3</ID>
+    <ID>MagicNumber:coroutinesSum.kt$4</ID>
+    <ID>MagicNumber:dispatchers.kt$10</ID>
+    <ID>MagicNumber:dispatchers.kt$100L</ID>
+    <ID>MagicNumber:hellocoroutine.kt$1000</ID>
+    <ID>MagicNumber:inheritance.kt$25.0</ID>
+    <ID>MagicNumber:inheritance.kt$3</ID>
+    <ID>MagicNumber:inheritance.kt$30.0</ID>
+    <ID>MagicNumber:inheritance.kt$75000.0</ID>
+    <ID>MagicNumber:inheritance.kt$Salaried$52</ID>
+    <ID>MagicNumber:jumble.kt$Jumble$5</ID>
+    <ID>MagicNumber:jumble.kt$Jumble$6</ID>
+    <ID>MagicNumber:launch.kt$200L</ID>
+    <ID>MagicNumber:lazysequences.kt$100</ID>
+    <ID>MagicNumber:lazysequences.kt$200</ID>
+    <ID>MagicNumber:lazysequences.kt$2_000_000</ID>
+    <ID>MagicNumber:lazysequences.kt$3</ID>
+    <ID>MagicNumber:library_delegates.kt$17</ID>
+    <ID>MagicNumber:library_delegates.kt$42</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$11</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$13</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1938</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1965</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1967</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1971</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1977</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1981</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1983</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$1984</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$20</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$21</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$22</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$29</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$3</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$4</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$5</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$6</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$7</ID>
+    <ID>MagicNumber:map_filter_reduce.kt$9</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$100</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$12</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$2.54</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$273.15</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$32</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$5</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$5280</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$60</ID>
+    <ID>MagicNumber:openweathermap.kt$Model$9</ID>
+    <ID>MagicNumber:openweathermap.kt$OpenWeatherMap$4</ID>
+    <ID>MagicNumber:overheadpass.kt$41.6314</ID>
+    <ID>MagicNumber:overheadpass.kt$72.4596</ID>
+    <ID>MagicNumber:ranges_and_progressions.kt$5</ID>
+    <ID>MagicNumber:runblocking.kt$200L</ID>
+    <ID>MagicNumber:runtime_singleton.kt$MySingleton$3</ID>
+    <ID>MagicNumber:shallow_copy.kt$10.0</ID>
+    <ID>MagicNumber:shallow_copy.kt$5</ID>
+    <ID>MagicNumber:withcontext.kt$100L</ID>
+    <ID>MagicNumber:yield_all_demo.kt$3</ID>
+    <ID>MagicNumber:yield_all_demo.kt$5</ID>
+    <ID>MagicNumber:yield_all_demo.kt$8</ID>
+    <ID>MatchingDeclarationName:Overloads.kt$Product</ID>
+    <ID>MatchingDeclarationName:comparisons.kt$Golfer</ID>
+    <ID>MatchingDeclarationName:data_classes_demo.kt$KotlinPerson</ID>
+    <ID>MatchingDeclarationName:encoder.kt$Encoder : ReadWriteProperty</ID>
+    <ID>MatchingDeclarationName:jumble.kt$Jumble</ID>
+    <ID>MatchingDeclarationName:lateinitdemo.kt$LateInitDemo</ID>
+    <ID>MatchingDeclarationName:map_filter_reduce.kt$Person</ID>
+    <ID>MatchingDeclarationName:shallow_copy.kt$OrderItem</ID>
+    <ID>MaxLineLength:PalindromeTest.kt$PalindromeTest$ A man, a plan, a caret, a ban, a myriad, a sum, a lac, a liar, a hoop, a pint, a catalpa, a gas, an oil, a bird, a yell, a vat, a caw, a pax, a wag, a tax, a nay, a ram, a cap, a yam, a gay, a tsar, a wall, a car, a luger, a ward, a bin, a woman, a vassal, a wolf, a tuna, a nit, a pall, a fret, a watt, a bay, a daub, a tan, a cab, a datum, a gall, a hat, a fag, a zap, a say, a jaw, a lay, a wet, a gallop, a tug, a trot, a trap, a tram, a torr, a caper, a top, a tonk, a toll, a ball, a fair, a sax, a minim, a tenor, a bass, a passer, a capital, a rut, an amen, a ted, a cabal, a tang, a sun, an ass, a maw, a sag, a jam, a dam, a sub, a salt, an axon, a sail, an ad, a wadi, a radian, a room, a rood, a rip, a tad, a pariah, a revel, a reel, a reed, a pool, a plug, a pin, a peek, a parabola, a dog, a pat, a cud, a nu, a fan, a pal, a rum, a nod, an eta, a lag, an eel, a batik, a mug, a mot, a nap, a maxim, a mood, a leek, a grub, a gob, a gel, a drab, a citadel, a total, a cedar, a tap, a gag, a rat, a manor, a bar, a gal, a cola, a pap, a yaw, a tab, a raj, a gab, a nag, a pagan, a bag, a jar, a bat, a way, a papa, a local, a gar, a baron, a mat, a rag, a gap, a tar, a decal, a tot, a led, a tic, a bard, a leg, a bog, a burg, a keel, a doom, a mix, a map, an atom, a gum, a kit, a baleen, a gala, a ten, a don, a mural, a pan, a faun, a ducat, a pagoda, a lob, a rap, a keep, a nip, a gulp, a loop, a deer, a leer, a lever, a hair, a pad, a tapir, a door, a moor, an aid, a raid, a wad, an alias, an ox, an atlas, a bus, a madam, a jag, a saw, a mass, an anus, a gnat, a lab, a cadet, an em, a natural, a tip, a caress, a pass, a baronet, a minimax, a sari, a fall, a ballot, a knot, a pot, a rep, a carrot, a mart, a part, a tort, a gut, a poll, a gateway, a law, a jay, a sap, a zag, a fat, a hall, a gamut, a dab, a can, a tabu, a day, a batt, a waterfall, a patina, a nut, a flow, a lass, a van, a mow, a nib, a draw, a regular, a call, a war, a stay, a gam, a yap, a cam, a ray, an ax, a tag, a wax, a paw, a cat, a valley, a drib, a lion, a saga, a plat, a catnip, a pooh, a rail, a calamus, a dairyman, a bater, a canal - Panama!</ID>
+    <ID>MaxLineLength:build.gradle.kts$destination = file("build/reports/detekt.html")</ID>
+    <ID>MaxLineLength:build.gradle.kts$destination = file("build/reports/detekt.txt")</ID>
+    <ID>MaxLineLength:build.gradle.kts$destination = file("build/reports/detekt.xml")</ID>
+    <ID>MayBeConst:customerdemo.kt$Astro.Companion$val url = "http://api.open-notify.org/astros.json"</ID>
+    <ID>MayBeConst:runtime_singleton.kt$MySingleton$val myProperty = 3</ID>
+    <ID>NewLineAtEndOfFile:AlgorithmBenchmarks.kt$functional.AlgorithmBenchmarks.kt</ID>
+    <ID>NewLineAtEndOfFile:ArrayTests.kt$collections.ArrayTests.kt</ID>
+    <ID>NewLineAtEndOfFile:AssociateWithKtTest.kt$collections.AssociateWithKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:AstroRequestTest.kt$astro.AstroRequestTest.kt</ID>
+    <ID>NewLineAtEndOfFile:BinaryStringAndBack.kt$misc.BinaryStringAndBack.kt</ID>
+    <ID>NewLineAtEndOfFile:BitwiseTests.kt$simple.BitwiseTests.kt</ID>
+    <ID>NewLineAtEndOfFile:BookAggregator.kt$misc.BookAggregator.kt</ID>
+    <ID>NewLineAtEndOfFile:BookTests.kt$misc.BookTests.kt</ID>
+    <ID>NewLineAtEndOfFile:CalculatorTests.kt$simple.CalculatorTests.kt</ID>
+    <ID>NewLineAtEndOfFile:CoerceIn.kt$collections.CoerceIn.kt</ID>
+    <ID>NewLineAtEndOfFile:CollectionsTests.kt$collections.CollectionsTests.kt</ID>
+    <ID>NewLineAtEndOfFile:CombinationsKtTest.kt$misc.CombinationsKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:CompanyEmployeeTest.kt$interfaces.CompanyEmployeeTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ComplexOverloadOperatorsKtTest.kt$operators.ComplexOverloadOperatorsKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:CreateThread.kt$misc.CreateThread.kt</ID>
+    <ID>NewLineAtEndOfFile:CsvFileSourceKotlinTests.kt$junit5.CsvFileSourceKotlinTests.kt</ID>
+    <ID>NewLineAtEndOfFile:Customer.kt$oop.Customer.kt</ID>
+    <ID>NewLineAtEndOfFile:Customer1.kt$oop.Customer1.kt</ID>
+    <ID>NewLineAtEndOfFile:CustomerTest.kt$oop.CustomerTest.kt</ID>
+    <ID>NewLineAtEndOfFile:DelegatesTest.kt$delegates.DelegatesTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Destructuring.kt$misc.Destructuring.kt</ID>
+    <ID>NewLineAtEndOfFile:ExceptionTests.kt$junit5.ExceptionTests.kt</ID>
+    <ID>NewLineAtEndOfFile:ExhaustiveWhen.kt$misc.ExhaustiveWhen.kt</ID>
+    <ID>NewLineAtEndOfFile:ExponentiationKtTest.kt$operators.ExponentiationKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:FibflowTest.kt$coroutines.FibflowTest.kt</ID>
+    <ID>NewLineAtEndOfFile:FibonacciSequenceTest.kt$sequences.FibonacciSequenceTest.kt</ID>
+    <ID>NewLineAtEndOfFile:FileIOTest.kt$io.FileIOTest.kt</ID>
+    <ID>NewLineAtEndOfFile:FilteringTests.kt$functional.FilteringTests.kt</ID>
+    <ID>NewLineAtEndOfFile:FunctionNamesTest.kt$misc.FunctionNamesTest.kt</ID>
+    <ID>NewLineAtEndOfFile:IOProblem.kt$javaintegration.IOProblem.kt</ID>
+    <ID>NewLineAtEndOfFile:IOProblemKtTest.kt$javaintegration.IOProblemKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ISSPosition.kt$astro.ISSPosition.kt</ID>
+    <ID>NewLineAtEndOfFile:IfEmptyOrBlank.kt$collections.IfEmptyOrBlank.kt</ID>
+    <ID>NewLineAtEndOfFile:IfEmptyOrBlankKtTest.kt$collections.IfEmptyOrBlankKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:JUnit5ListTests.kt$collections.JUnit5ListTests.kt</ID>
+    <ID>NewLineAtEndOfFile:JumbleTest.kt$io.JumbleTest.kt</ID>
+    <ID>NewLineAtEndOfFile:KotlinVersion.kt$misc.KotlinVersion.kt</ID>
+    <ID>NewLineAtEndOfFile:KotlinVersionTests.kt$misc.KotlinVersionTests.kt</ID>
+    <ID>NewLineAtEndOfFile:LateInitDemoTest.kt$oop.LateInitDemoTest.kt</ID>
+    <ID>NewLineAtEndOfFile:MapTests.kt$collections.MapTests.kt</ID>
+    <ID>NewLineAtEndOfFile:MeasureTime.kt$misc.MeasureTime.kt</ID>
+    <ID>NewLineAtEndOfFile:NothingDemo.kt$simple.NothingDemo.kt</ID>
+    <ID>NewLineAtEndOfFile:NothingTests.kt$misc.NothingTests.kt</ID>
+    <ID>NewLineAtEndOfFile:NumbersTests.kt$misc.NumbersTests.kt</ID>
+    <ID>NewLineAtEndOfFile:OpenWeatherMapTests.kt$coroutines.OpenWeatherMapTests.kt</ID>
+    <ID>NewLineAtEndOfFile:OverheadTest.kt$astro.OverheadTest.kt</ID>
+    <ID>NewLineAtEndOfFile:OverloadsTest.kt$javaintegration.OverloadsTest.kt</ID>
+    <ID>NewLineAtEndOfFile:PalindromeTest.kt$misc.PalindromeTest.kt</ID>
+    <ID>NewLineAtEndOfFile:PersonTest.kt$oop.PersonTest.kt</ID>
+    <ID>NewLineAtEndOfFile:PrimesTest.kt$functional.PrimesTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ProcessStringTest.kt$scope.ProcessStringTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductTest.kt$collections.ProductTest.kt</ID>
+    <ID>NewLineAtEndOfFile:RandomTests.kt$simple.RandomTests.kt</ID>
+    <ID>NewLineAtEndOfFile:RangeTests.kt$collections.RangeTests.kt</ID>
+    <ID>NewLineAtEndOfFile:RepeatDemo.kt$misc.RepeatDemo.kt</ID>
+    <ID>NewLineAtEndOfFile:ResourceTest.kt$functional.ResourceTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SequenceTests.kt$collections.SequenceTests.kt</ID>
+    <ID>NewLineAtEndOfFile:ShallowCopyTest.kt$oop.ShallowCopyTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SingletonTest.kt$singleton.SingletonTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SmartPhoneTest.kt$delegates.SmartPhoneTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Task.kt$oop.Task.kt</ID>
+    <ID>NewLineAtEndOfFile:Task1.kt$oop.Task1.kt</ID>
+    <ID>NewLineAtEndOfFile:Task1Test.kt$oop.Task1Test.kt</ID>
+    <ID>NewLineAtEndOfFile:TaskTests.kt$oop.TaskTests.kt</ID>
+    <ID>NewLineAtEndOfFile:ThrowExceptionTests.kt$io.simple.ThrowExceptionTests.kt</ID>
+    <ID>NewLineAtEndOfFile:TodosKtTest.kt$misc.TodosKtTest.kt</ID>
+    <ID>NewLineAtEndOfFile:UpCasting.kt$conversions.UpCasting.kt</ID>
+    <ID>NewLineAtEndOfFile:UseCalculator.kt$simple.UseCalculator.kt</ID>
+    <ID>NewLineAtEndOfFile:UseString.kt$scripts.UseString.kt</ID>
+    <ID>NewLineAtEndOfFile:Yoda.kt$extension.Yoda.kt</ID>
+    <ID>NewLineAtEndOfFile:add_nums.kt$scripts.add_nums.kt</ID>
+    <ID>NewLineAtEndOfFile:algorithms.kt$functional.algorithms.kt</ID>
+    <ID>NewLineAtEndOfFile:backticks.kt$misc.backticks.kt</ID>
+    <ID>NewLineAtEndOfFile:cancelling.kt$coroutines.cancelling.kt</ID>
+    <ID>NewLineAtEndOfFile:customerdemo.kt$simple.customerdemo.kt</ID>
+    <ID>NewLineAtEndOfFile:data_classes_demo.kt$scripts.data_classes_demo.kt</ID>
+    <ID>NewLineAtEndOfFile:defaults.kt$interfaces.defaults.kt</ID>
+    <ID>NewLineAtEndOfFile:delegateDoc.kt$delegates.delegateDoc.kt</ID>
+    <ID>NewLineAtEndOfFile:dispatchers.kt$coroutines.dispatchers.kt</ID>
+    <ID>NewLineAtEndOfFile:downloadImages.kt$coroutines.downloadImages.kt</ID>
+    <ID>NewLineAtEndOfFile:eam.kt$functional.eam.kt</ID>
+    <ID>NewLineAtEndOfFile:encoder.kt$delegates.encoder.kt</ID>
+    <ID>NewLineAtEndOfFile:exponentiation.kt$operators.exponentiation.kt</ID>
+    <ID>NewLineAtEndOfFile:fibflow.kt$coroutines.fibflow.kt</ID>
+    <ID>NewLineAtEndOfFile:hello.kt$scripts.hello.kt</ID>
+    <ID>NewLineAtEndOfFile:hellocoroutine.kt$coroutines.hellocoroutine.kt</ID>
+    <ID>NewLineAtEndOfFile:jumble.kt$io.jumble.kt</ID>
+    <ID>NewLineAtEndOfFile:lateinitdemo.kt$oop.lateinitdemo.kt</ID>
+    <ID>NewLineAtEndOfFile:launch.kt$coroutines.launch.kt</ID>
+    <ID>NewLineAtEndOfFile:lazysequences.kt$sequences.lazysequences.kt</ID>
+    <ID>NewLineAtEndOfFile:library_delegates.kt$delegates.library_delegates.kt</ID>
+    <ID>NewLineAtEndOfFile:map_filter_reduce.kt$lambdas.map_filter_reduce.kt</ID>
+    <ID>NewLineAtEndOfFile:openweathermap.kt$coroutines.openweathermap.kt</ID>
+    <ID>NewLineAtEndOfFile:overheadpass.kt$astro.overheadpass.kt</ID>
+    <ID>NewLineAtEndOfFile:people_in_space.kt$scripts.people_in_space.kt</ID>
+    <ID>NewLineAtEndOfFile:ranges_and_progressions.kt$collections.ranges_and_progressions.kt</ID>
+    <ID>NewLineAtEndOfFile:runblocking.kt$coroutines.runblocking.kt</ID>
+    <ID>NewLineAtEndOfFile:runtime_singleton.kt$singleton.runtime_singleton.kt</ID>
+    <ID>NewLineAtEndOfFile:shallow_copy.kt$oop.shallow_copy.kt</ID>
+    <ID>NewLineAtEndOfFile:shapes.kt$collections.shapes.kt</ID>
+    <ID>NewLineAtEndOfFile:timeHostName.kt$scripts.timeHostName.kt</ID>
+    <ID>NewLineAtEndOfFile:todos.kt$misc.todos.kt</ID>
+    <ID>NewLineAtEndOfFile:use_runtime.kt$singleton.use_runtime.kt</ID>
+    <ID>NewLineAtEndOfFile:withcontext.kt$coroutines.withcontext.kt</ID>
+    <ID>NewLineAtEndOfFile:yield_all_demo.kt$sequences.yield_all_demo.kt</ID>
+    <ID>SpreadOperator:add_nums.kt$(*ints)</ID>
+    <ID>SpreadOperator:jumble.kt$(*args)</ID>
+    <ID>TooGenericExceptionThrown:NothingDemo.kt$throw Exception("whatever")</ID>
+    <ID>TooGenericExceptionThrown:NothingTests.kt$NothingTests$throw Exception("Houston, we have a problem...")</ID>
+    <ID>TooGenericExceptionThrown:NothingTests.kt$NothingTests$throw Exception("Nothing at all")</ID>
+    <ID>TooGenericExceptionThrown:NothingTests.kt$NothingTests$throw Exception("nope")</ID>
+    <ID>TooManyFunctions:ComplexOverloadOperators.kt$operators.ComplexOverloadOperators.kt</ID>
+    <ID>TopLevelPropertyNaming:Yoda.kt$const val base = "https://api.funtranslations.com/translate/yoda.json?"</ID>
+    <ID>UnnecessaryAbstractClass:shapes.kt$Shape</ID>
+    <ID>WildcardImport:cancelling.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:dispatchers.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:downloadImages.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:openweathermap.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:withcontext.kt$import kotlinx.coroutines.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
